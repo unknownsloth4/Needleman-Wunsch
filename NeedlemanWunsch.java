@@ -149,10 +149,10 @@ public class NeedlemanWunsch {
     }
     
     public static void main(String[] args) {
-        String seq1 = "ATCG";
-        String seq2 = "TCG";
+        String seq1 = "NALWVAYMA";
+        String seq2 = "QALVAYA";
 
-        Penilaian s = new Penilaian(4, 0, -6);             
+        Penilaian s = new Penilaian(1, -1, -1);    // (match score = 1, mismatch score = -1, gap penalty = 1)        
         NeedlemanWunsch seq = new NeedlemanWunsch(seq1, seq2, s);     
 
         seq.isiMatrix();
